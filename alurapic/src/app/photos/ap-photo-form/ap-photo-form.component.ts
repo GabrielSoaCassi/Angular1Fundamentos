@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-ap-photo-form',
+  selector: 'ap-photo-form',
   templateUrl: './ap-photo-form.component.html',
   styleUrls: ['./ap-photo-form.component.css']
 })

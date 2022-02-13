@@ -12,6 +12,6 @@ export class PhotoService {
   constructor(private http: HttpClient) {}
 
   listFromUser(userName: string):Observable<Photo[]> {
-    return this.http.get<Photo[]>(`${api}/flavio/photos`);
+    return this.http.get<Photo[]>(`${api}/${userName}/photos`);
   }
 }
