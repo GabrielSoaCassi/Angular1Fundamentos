@@ -1,6 +1,6 @@
 import { Photo } from './photos/Photo';
 import { PhotoService } from "./photos/photo.service";
-import { Component } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
 @Component({
   selector: "app-root",
   templateUrl: "./app.component.html",
@@ -8,12 +8,4 @@ import { Component } from "@angular/core";
 })
 export class AppComponent {
   title = "app";
-
-  photos: Photo[] = [];
-
-  constructor(private photoService: PhotoService) {
-    photoService
-    .listFromUser("flavio")
-    .subscribe(photos => this.photos = photos)
-  }
 }
